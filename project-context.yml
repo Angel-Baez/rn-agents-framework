@@ -1,0 +1,51 @@
+project:
+  name: "my-mobile-app"
+  type: "mobile-app"  # mobile-app | fitness-app | social-app | ecommerce-app | fintech-app
+  description: "A React Native mobile application"
+
+stack:
+  platform: "expo"
+  expo_version: "51"
+  typescript: true
+  navigation: "expo-router"
+  styling: "nativewind"
+  state_management: "zustand"
+  backend: "supabase"
+  local_storage: "async-storage"
+  deployment: "eas"
+
+features:
+  authentication: true
+  offline_first: false
+  push_notifications: false
+  camera: false
+  location: false
+  payments: false
+  ai_integration: false
+  real_time: false
+  social_features: false
+
+quality_targets:
+  app_size_limit: 50  # MB
+  startup_time: 2000  # ms
+  test_coverage: 80   # %
+  bundle_js_size: 5   # MB
+
+platforms:
+  ios:
+    min_version: "13.0"
+    bundle_identifier: "com.yourcompany.yourapp"
+  android:
+    min_version: "21"
+    package: "com.yourcompany.yourapp"
+
+supabase:
+  url: "${EXPO_PUBLIC_SUPABASE_URL}"
+  anon_key: "${EXPO_PUBLIC_SUPABASE_ANON_KEY}"
+
+team:
+  product_manager: true
+  solution_architect: true
+  mobile_architect: true
+  backend_architect: true
+  data_engineer: true
