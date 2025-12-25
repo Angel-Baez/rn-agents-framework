@@ -1,0 +1,40 @@
+project:
+  name: "basic-mobile-app"
+  type: "mobile-app"
+  description: "Basic React Native app with authentication"
+
+stack:
+  platform: "expo"
+  expo_version: "51"
+  typescript: true
+  navigation: "expo-router"
+  styling: "nativewind"
+  state_management: "zustand"
+  backend: "supabase"
+  local_storage: "async-storage"
+  deployment: "eas"
+
+features:
+  authentication: true
+  offline_first: false
+  push_notifications: false
+  camera: false
+  location: false
+  payments: false
+  ai_integration: false
+  real_time: false
+  social_features: false
+
+quality_targets:
+  app_size_limit: 50
+  startup_time: 2000
+  test_coverage: 80
+  bundle_js_size: 5
+
+platforms:
+  ios:
+    min_version: "13.0"
+    bundle_identifier: "com.example.basicapp"
+  android:
+    min_version: "21"
+    package: "com.example.basicapp"

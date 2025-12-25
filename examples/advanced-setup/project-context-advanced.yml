@@ -1,0 +1,68 @@
+project:
+  name: "advanced-social-app"
+  type: "social-app"
+  description: "Social networking app with real-time features"
+
+stack:
+  platform: "expo"
+  expo_version: "51"
+  typescript: true
+  navigation: "expo-router"
+  styling: "nativewind"
+  state_management: "zustand"
+  backend: "supabase"
+  local_storage: "async-storage"
+  deployment: "eas"
+
+features:
+  authentication: true
+  offline_first: true
+  push_notifications: true
+  camera: true
+  location: true
+  payments: false
+  ai_integration: false
+  real_time: true
+  social_features: true
+
+quality_targets:
+  app_size_limit: 50
+  startup_time: 2000
+  test_coverage: 85
+  bundle_js_size: 5
+
+platforms:
+  ios:
+    min_version: "14.0"
+    bundle_identifier: "com.example.socialapp"
+  android:
+    min_version: "23"
+    package: "com.example.socialapp"
+
+supabase:
+  url: "${EXPO_PUBLIC_SUPABASE_URL}"
+  anon_key: "${EXPO_PUBLIC_SUPABASE_ANON_KEY}"
+  realtime_enabled: true
+
+performance:
+  hermes_enabled: true
+  image_optimization: true
+  code_splitting: true
+
+agents_enabled:
+  - orchestrator
+  - product-manager
+  - solution-architect
+  - mobile-architect
+  - backend-architect
+  - data-engineer
+  - native-modules-engineer
+  - performance-optimizer
+  - offline-architect
+  - security-guardian
+  - test-engineer
+  - qa-lead
+  - observability-engineer
+  - release-manager
+  - code-reviewer
+  - documentation-engineer
